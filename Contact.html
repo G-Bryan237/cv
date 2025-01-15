@@ -3,28 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact Dze Bryan Ewi</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h3>My Contact details</h3>
-    <p>
-        <ol>
-        <li>Tel: +237654207230</li>
-        <li>Email: e.bryandze@gmail.com</li>
-        <li>Twitter: <a href="x.com/dzebryan">@dzebryan</a></li>
-        <li>Facebook: <a href="facebook.com/bryanyt" target="_blank">Bryan YT</a></li>
-        <li>Instragram: <a href="instragram.com/x_bryan02">x_bryan02</a></li>
-    </p>
-    <hr>
-    <form action="mailto: bryandze237@gmail.com" method="post">
-        <label for="">Your Name:</label>
-        <input type="text" name="yourName"><br>
-        <label>Email:</label>
-        <input type="email" name="yourEmail"><br>
-        <label for="">Your Message:</label>
-        <textarea name="YourMessage" id="" cols="30" rows="10"></textarea><br>
-        <input type="submit">
-    </form>
+    <main class="portfolio-container">
+        <div class="contact-wrapper">
+            <section class="contact-info-section">
+                <h2><i class="fas fa-address-card"></i> Contact Information</h2>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+237 654 207 230</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>e.bryandze@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/dzebryan237" class="social-icon" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/G-Bryan237" class="social-icon" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://x.com/dze_bryan" class="social-icon" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://www.facebook.com/share/1K2Nf7osLi/" class="social-icon" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://instagram.com/x_bryan02" class="social-icon" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <h2><i class="fas fa-paper-plane"></i> Send Me a Message</h2>
+                <form action="mailto:bryandze237@gmail.com" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="yourName" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="yourEmail" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="yourMessage" rows="6" required placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <footer class="portfolio-footer">
+            <nav class="footer-nav">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+                <a href="hobbies.html" class="nav-link">
+                    <i class="fas fa-heart"></i> My Hobbies
+                </a>
+            </nav>
+        </footer>
+    </main>
 </body>
 </html>
